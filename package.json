@@ -1,0 +1,29 @@
+{
+  "name": "project-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "http-server . -p 8080 -c-1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:server": "start-server-and-test start http://localhost:8080 cy:run",
+    "test": "npm run cy:run:server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FransImanuel04/automation-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FransImanuel04/automation-testing/issues"
+  },
+  "homepage": "https://github.com/FransImanuel04/automation-testing#readme",
+  "devDependencies": {
+    "cypress": "^16.0.0",
+    "http-server": "^14.1.1",
+    "start-server-and-test": "^3.0.12"
+  }
+}
