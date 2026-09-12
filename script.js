@@ -64,7 +64,7 @@ function renderTasks() {
   });
 
   const completedTasks = tasks.filter((task) => task.completed).length;
-  activeCount.textContent = String(tasks.length - completedTasks);
+  activeCount.textContent = String(tasks.length);
   completedCount.textContent = String(completedTasks);
   emptyState.hidden = tasks.length > 0;
 }
